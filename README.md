@@ -22,7 +22,7 @@ listens to the state events as well. There we can see that the event was
 actually pushed.
 
 ## Steps to reproduce the problem
-1. Register in Tango Database one DeviceServer DS with instance name `test`
+1. Register in Tango Database one DeviceLostEvent DS with instance name `test`
    with 1 device of `DeviceLostEvent` class, with the name
    `test/devicelostevent/1`.
    ```console
@@ -30,7 +30,7 @@ actually pushed.
    ```
 2. Start device server:
    ```console
-   python3 DeviceLostEvent.py test`
+   python3 DeviceLostEvent.py test
    ```
 3. Start a secondary ipython client to listen to the events:
    ```
